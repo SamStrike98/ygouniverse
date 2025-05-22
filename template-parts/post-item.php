@@ -1,8 +1,10 @@
-<div class="border border-4">
+<div class="border border-4 rounded-md">
     <a href="<?php the_permalink(); ?>">
-        <img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-100"
-            src="<?php the_post_thumbnail_url(); ?>"
-            alt="<?php the_title(); ?>" />
+        <figure class="overflow-hidden h-[200px]">
+            <img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-100"
+                src="<?php the_post_thumbnail_url(); ?>"
+                alt="<?php the_title(); ?>" />
+        </figure>
         <h3><?php the_title(); ?></h3>
 
 
