@@ -8,8 +8,8 @@
     <title><?php bloginfo('name'); ?></title>
 </head>
 
-<body>
-    <header>
+<body class="bg-[#f2f2f2]">
+    <header class="bg-green-500 h-[100px]">
 
     </header>
-    <div>
+    <div class="min-h-[90vh] container mx-auto bg-white">

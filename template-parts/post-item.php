@@ -1,4 +1,4 @@
-<div class="border border-4 rounded-md">
+<div class="border border-4 rounded-md w-full">
     <a href="<?php the_permalink(); ?>">
         <figure class="overflow-hidden h-[200px]">
             <img class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-100"
