@@ -1,1 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    --font-ygo: "WDXL Lubrifont TC", "sans-serif";
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl font-bold font-ygo;
+    }
+
+    h2 {
+        @apply text-3xl font-bold font-ygo;
+    }
+    h3 {
+        @apply text-2xl font-bold font-ygo;
+    }
+
+    h4 {
+        @apply text-xl font-bold font-ygo;
+    }
+}
+
+@layer components {
+
+    /* DROPDOWN LI ELEMENTS */
+    .menu-item a {
+        @apply transition-colors;
+    }
+
+    .menu-item a:hover{
+        @apply text-[#948979];
+    }
+
+    /* .menu-item li a {
+        @apply text-3xl;
+    } */
+}

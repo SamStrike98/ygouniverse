@@ -1,5 +1,5 @@
     </div>
-    <footer class="w-full h-[150px] bg-green-500">
+    <footer class="w-full h-[150px] bg-[#222831]">
 
     </footer>
     <?php wp_footer(); ?>
