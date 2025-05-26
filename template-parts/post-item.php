@@ -7,7 +7,7 @@
         </figure>
         <!-- <div class="bg-[#393E46] w-full h-full px-3 pb-3"> -->
         <div class="bg-[#6c7482] rounded-md p-3 w-full">
-            <h2 class="text-center text-[#DFD0B8]"><?php the_title(); ?></h3>
+            <h2 class="text-center text-[#DFD0B8]"><?php the_title(); ?></h2>
 
 
                 <div class="bg-teal-500 text-white rounded-lg max-w-min px-2 text-center border-2 border-teal-700 font-semibold"><?php the_category(); ?></div>

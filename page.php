@@ -1,16 +1,10 @@
 <?php get_header(); ?>
 <div class="container mx-auto py-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4">
-        <?php if (have_posts()): ?>
-            <?php while (have_posts()): the_post(); ?>
-                <?php get_template_part('template-parts/post', 'item'); ?>
-            <?php endwhile; ?>
+
+    <h1 class="text-center text-[#DFD0B8]"><?php the_title(); ?></h1>
+    <div class="text-[#DFD0B8]">
+        <p><?php the_content(); ?></p>
     </div>
-
-<?php else: ?>
-    <p>No Posts Found</p>
-<?php endif; ?>
-
 
 
 </div>
