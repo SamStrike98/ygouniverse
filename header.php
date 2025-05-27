@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-[#222831]">
-    <header class="bg-[#222831] h-[100px]">
+    <header class="bg-[#222831] h-[100px] pt-5">
         <nav class="flex flex-row justify-between container mx-auto">
         <div class="logo">
             <?php
