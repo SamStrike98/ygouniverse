@@ -1,17 +1,38 @@
 <?php get_header(); ?>
+
 <div class="container mx-auto py-10">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4">
-        <?php if (have_posts()): ?>
-            <?php while (have_posts()): the_post(); ?>
-                <?php get_template_part('template-parts/post', 'item'); ?>
-            <?php endwhile; ?>
-    </div>
+    <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-<?php else: ?>
-    <p>No Posts Found</p>
-<?php endif; ?>
+            <article class="">
 
+                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md h-[350px] w-full h-[200px] flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"
+                    style="background-image: url(<?php the_post_thumbnail_url(array(9999, 350)) ?>);">
+                    <h1 class=""><?php the_title(); ?></h1>
+                </div>
+
+                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]">
+                    <div class="">
+
+                        <div class="mb-5">
+                            <p class="text-white"><?php the_author(); ?> - <?php echo get_the_date(); ?></p>
+                        </div>
+                    </div>
+                    <h4 class=""><?php the_category(); ?></h4>
+                    <?php the_content(); ?>
+                </div>
+            </article>
+
+
+    <?php endwhile;
+    endif; ?>
 
 
 </div>
+<?php
+if (comments_open() || get_comments_number()) {
+    comments_template();
+}
+?>
+</div>
+
 <?php get_footer(); ?>
