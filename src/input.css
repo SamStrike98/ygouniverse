@@ -10,18 +10,22 @@
 
 @layer base {
     h1 {
-        @apply text-[#DFD0B8] text-4xl font-extrabold font-ygo;
+        @apply text-[#DFD0B8] text-6xl font-extrabold font-ygo;
     }
 
     h2 {
-        @apply text-[#DFD0B8] text-3xl font-extrabold font-ygo;
+        @apply text-[#DFD0B8] text-5xl font-extrabold font-ygo;
     }
     h3 {
-        @apply text-[#DFD0B8] text-2xl font-extrabold font-ygo;
+        @apply text-[#DFD0B8] text-4xl font-extrabold font-ygo;
     }
 
     h4 {
-        @apply text-[#DFD0B8] text-xl font-extrabold font-ygo;
+        @apply text-[#DFD0B8] text-3xl font-extrabold font-ygo;
+    }
+
+    p {
+        @apply text-[#DFD0B8] text-2xl font-ygo;
     }
 }
 
