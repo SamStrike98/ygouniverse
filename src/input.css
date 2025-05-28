@@ -25,7 +25,7 @@
     }
 
     p {
-        @apply text-[#DFD0B8] text-2xl font-ygo;
+        @apply text-[#DFD0B8] text-xl font-ygo;
     }
 }
 
