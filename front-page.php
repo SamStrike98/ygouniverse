@@ -3,7 +3,7 @@
     <div class="h-[300px] flex flex-col justify-between">
         <div>
             <h1 class="text-center">Welcome to YGO Universe</h1>
-            <h3 class="text-center">All Things Yu-Gi-Oh!</h3>
+            <h4 class="text-center">All Things Yu-Gi-Oh!</h4>
         </div>
 
 
@@ -34,6 +34,16 @@
     <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]">
         <h3>Newsletter:</h3>
 
+        <form>
+
+            <div>
+                <label>Email</label>
+                <input>
+            </div>
+
+            <button>Sign Up</button>
+
+        </form>
     </div>
 
 
