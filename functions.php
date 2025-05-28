@@ -14,3 +14,9 @@ register_nav_menus(
 );
 add_theme_support('post-thumbnails');
 add_theme_support('custom-logo', array('width' => 200, 'height' => 100, 'flex-height' => true, 'flex-width' => true));
+
+function custom_excerpt_length($length)
+{
+    return 15; // Change this number to your desired word count
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
