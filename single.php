@@ -5,12 +5,12 @@
 
             <article class="">
 
-                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md h-[350px] w-full h-[200px] flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"
+                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md h-[350px] w-full h-[200px] flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"
                     style="background-image: url(<?php the_post_thumbnail_url(array(9999, 350)) ?>);">
                     <h1 class=""><?php the_title(); ?></h1>
                 </div>
 
-                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]">
+                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] px-3 py-10 text-[#DFD0B8]">
                     <div class="">
 
                         <div class="mb-5">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <h4 class=""><?php the_category(); ?></h4>
-                    <?php the_content(); ?>
+                    <p><?php the_content(); ?></p>
                 </div>
             </article>
 
