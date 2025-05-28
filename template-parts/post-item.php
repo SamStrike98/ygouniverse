@@ -6,7 +6,7 @@
                 alt="<?php the_title(); ?>" />
         </figure>
         <!-- <div class="bg-[#393E46] w-full h-full px-3 pb-3"> -->
-        <div class="bg-[#6c7482] rounded-md p-3 w-full">
+        <div class="bg-[#6c7482] rounded-md p-3 w-full h-full">
             <h3 class="text-center text-[#DFD0B8]"><?php the_title(); ?></h3>
 
 
