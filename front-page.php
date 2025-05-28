@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="container mx-auto py-10">
-    <div class="h-[300px] flex flex-col justify-between">
-        <div>
-            <h1 class="text-center">Welcome to YGO Universe</h1>
+    <div class="h-[350px] flex flex-col justify-between">
+        <div class="">
+            <h1 class="text-center underline decoration-[#6c7482]">Welcome to YGO Universe</h1>
             <h4 class="text-center">All Things Yu-Gi-Oh!</h4>
         </div>
 
