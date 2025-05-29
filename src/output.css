@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-teal-700: oklch(51.1% 0.096 186.391);
     --color-white: #fff;
@@ -221,9 +220,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -250,12 +246,6 @@
   }
   .max-w-min {
     max-width: min-content;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -313,10 +303,6 @@
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -347,9 +333,6 @@
   .bg-\[\#222831\] {
     background-color: #222831;
   }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
-  }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
   }
@@ -359,12 +342,6 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
   .p-15 {
     padding: calc(var(--spacing) * 15);
   }
@@ -373,9 +350,6 @@
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
@@ -430,10 +404,6 @@
   .shadow-\[inset_0px_0px_15px_6px_rgba\(0\,_0\,_0\,_0\.8\)\] {
     --tw-shadow: inset 0px 0px 15px 6px var(--tw-shadow-color, rgba(0, 0, 0, 0.8));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -533,6 +503,39 @@
     line-height: var(--tw-leading, var(--text-xl--line-height));
     color: #DFD0B8;
   }
+  input {
+    border-radius: var(--radius-md);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: #DFD0B8;
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  input:focus {
+    border-radius: var(--radius-md);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: #6c7482;
+  }
+  button {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--radius-md);
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+    border-color: #DFD0B8;
+    background-color: #393E46;
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 1);
+    --tw-shadow: inset 0px 0px 7px 3px var(--tw-shadow-color, rgba(0, 0, 0, 0.8));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  button:hover {
+    background-color: #DFD0B8;
+    color: #6c7482;
+  }
 }
 @layer components {
   .menu-item a {
@@ -623,11 +626,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -667,7 +665,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
