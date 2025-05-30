@@ -33,6 +33,12 @@
     input:focus {
         @apply border-3 border-[#6c7482] rounded-md;
     }
+    i {
+        @apply transition-colors;
+    }
+    i:hover {
+        @apply text-[#948979];
+    }
     /* button {
         @apply bg-[#6c7482] py-1 px-3 rounded-md cursor-pointer;
     } */

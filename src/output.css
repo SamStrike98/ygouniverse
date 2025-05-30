@@ -8,10 +8,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-teal-700: oklch(51.1% 0.096 186.391);
-    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
@@ -224,9 +222,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -235,9 +230,6 @@
   }
   .h-\[200px\] {
     height: 200px;
-  }
-  .h-\[300px\] {
-    height: 300px;
   }
   .h-\[350px\] {
     height: 350px;
@@ -251,17 +243,8 @@
   .min-h-\[90vh\] {
     min-height: 90vh;
   }
-  .w-\[100px\] {
-    width: 100px;
-  }
-  .w-\[250px\] {
-    width: 250px;
-  }
   .w-\[300px\] {
     width: 300px;
-  }
-  .w-\[3000px\] {
-    width: 3000px;
   }
   .w-full {
     width: 100%;
@@ -269,14 +252,8 @@
   .max-w-min {
     max-width: min-content;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -343,10 +320,6 @@
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -376,12 +349,6 @@
   }
   .bg-\[\#222831\] {
     background-color: #222831;
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
   }
   .bg-teal-500 {
     background-color: var(--color-teal-500);
@@ -431,10 +398,6 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -462,10 +425,6 @@
   .shadow-\[inset_0px_0px_15px_6px_rgba\(0\,_0\,_0\,_0\.8\)\] {
     --tw-shadow: inset 0px 0px 15px 6px var(--tw-shadow-color, rgba(0, 0, 0, 0.8));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -581,6 +540,14 @@
     border-width: 3px;
     border-color: #6c7482;
   }
+  i {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  i:hover {
+    color: #948979;
+  }
   button {
     display: flex;
     cursor: pointer;
@@ -693,11 +660,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -737,7 +699,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
