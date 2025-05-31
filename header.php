@@ -31,4 +31,4 @@
         </div>
     </nav>
     </header>
-    <div class="min-h-[90vh] container mx-auto bg-[#222831]">
+    <div class="min-h-[80vh] container mx-auto bg-[#222831]">
