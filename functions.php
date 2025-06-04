@@ -5,8 +5,14 @@ function ygouniverse_enqueue_styles()
     wp_enqueue_style('font_awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 };
 
+function ygouniverse_enqueue_scripts()
+{
+    wp_enqueue_script('main', get_template_directory_uri() . '/src/main.js',true);
+};
+
 
 add_action('wp_enqueue_scripts', 'ygouniverse_enqueue_styles');
+add_action('wp_enqueue_scripts', 'ygouniverse_enqueue_scripts');
 
 
 register_nav_menus(
