@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-[#222831]">
-    <header class="bg-[#222831] h-[100px] pt-5">
+    <header class="bg-[#222831] h-[100px] pt-5 ">
         <nav class="h-full flex flex-row justify-between container mx-auto">
             <div class="">
                 <?php
@@ -39,7 +39,7 @@
                     'items_wrap' => '<ul class="z-5 w-full pt-[100px] flex flex-col items-center text-[#DFD0B8] text-2xl font-ygo font-bold gap-8">%3$s</ul>',
                 )); ?>
             </div>
-            <div class="py-10 px-5 lg:hidden z-10 fixed top-0 right-0">
+            <div class="py-15 px-5 lg:hidden z-10 fixed top-0 right-0">
                 <div class="hamburger flex"><i class=" fa-solid fa-bars cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
                 <div class="cross hidden"><i class="fa-solid fa-xmark cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
             </div>
