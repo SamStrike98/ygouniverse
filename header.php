@@ -29,18 +29,19 @@
                     'items_wrap' => '<ul class="mt-3 flex flex-row text-[#DFD0B8] text-3xl font-ygo font-bold gap-8">%3$s</ul>',
                 )); ?>
             </div>
-            <div class="flex flex-row items-center lg:hidden h-full">
-                <div class="hamburger flex"><i class=" fa-solid fa-bars cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
-                <div class="cross hidden"><i class="fa-solid fa-xmark cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
-            </div>
 
-            <div class="w-[90%] lg:hidden flex flex-row justify-end bg-green-500">
+
+            <div class="mobile_nav w-[40%] h-[100vh] hidden lg:hidden bg-[#222831] fixed top-0 right-0">
                 <?php wp_nav_menu(array(
                     'theme_location' => 'ygouniverse_main_menu',
                     'menu_class' => 'space-y-2', // Ensure spacing
                     'container' => false, // Remove extra container div
-                    'items_wrap' => '<ul class="mt-3 flex flex-row text-[#DFD0B8] text-3xl font-ygo font-bold gap-8">%3$s</ul>',
+                    'items_wrap' => '<ul class="z-5 w-full pt-[100px] flex flex-col items-center text-[#DFD0B8] text-2xl font-ygo font-bold gap-8">%3$s</ul>',
                 )); ?>
+            </div>
+            <div class="py-10 px-5 lg:hidden z-10 fixed top-0 right-0">
+                <div class="hamburger flex"><i class=" fa-solid fa-bars cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
+                <div class="cross hidden"><i class="fa-solid fa-xmark cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
             </div>
         </nav>
 

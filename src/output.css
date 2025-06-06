@@ -185,6 +185,54 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-\[0\] {
+    top: 0;
+  }
+  .top-\[0px\] {
+    top: 0px;
+  }
+  .top-\[10\] {
+    top: 10;
+  }
+  .top-\[50px\] {
+    top: 50px;
+  }
+  .top-\[60px\] {
+    top: 60px;
+  }
+  .top-\[100\] {
+    top: 100;
+  }
+  .top-\[100px\] {
+    top: 100px;
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-5 {
+    z-index: 5;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-11 {
+    z-index: 11;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -212,8 +260,14 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -233,6 +287,9 @@
   .h-\[100px\] {
     height: 100px;
   }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .h-\[150px\] {
     height: 150px;
   }
@@ -245,11 +302,20 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[calc\(100vh\)\] {
+    height: calc(100vh);
+  }
+  .h-\[calc\(100vh-100px\)\] {
+    height: calc(100vh - 100px);
+  }
   .h-full {
     height: 100%;
   }
   .min-h-\[80vh\] {
     min-height: 80vh;
+  }
+  .w-\[40\%\] {
+    width: 40%;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -371,8 +437,14 @@
   .bg-\[\#393E46\] {
     background-color: #393E46;
   }
+  .bg-\[\#1566e0\] {
+    background-color: #1566e0;
+  }
   .bg-\[\#222831\] {
     background-color: #222831;
+  }
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
   }
   .bg-green-500 {
     background-color: var(--color-green-500);
@@ -386,6 +458,9 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -398,14 +473,23 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
   }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
@@ -518,6 +602,11 @@
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:relative {
+    @media (width >= 64rem) {
+      position: relative;
     }
   }
   .lg\:flex {

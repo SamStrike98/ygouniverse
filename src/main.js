@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const hamburger = document.querySelector(".hamburger");
 const cross = document.querySelector(".cross");
+    const mobileNav = document.querySelector(".mobile_nav");
 
 hamburger.addEventListener('click', () => {
     console.log('hamburger clicked');
@@ -9,6 +10,8 @@ hamburger.addEventListener('click', () => {
     cross.classList.toggle('hidden');
     hamburger.classList.toggle('flex');
     cross.classList.toggle('flex');
+    mobileNav.classList.toggle('hidden');
+    mobileNav.classList.toggle('flex');    
 });
 
 cross.addEventListener('click', () => {
@@ -17,5 +20,7 @@ cross.addEventListener('click', () => {
     hamburger.classList.toggle('hidden');
     hamburger.classList.toggle('flex');
     cross.classList.toggle('flex');
+    mobileNav.classList.toggle('hidden');
+    mobileNav.classList.toggle('flex');
 });
 });
