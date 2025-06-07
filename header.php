@@ -31,7 +31,7 @@
             </div>
 
 
-            <div class="mobile_nav w-[40%] h-[100vh] hidden lg:hidden bg-[#222831] fixed top-0 right-0">
+            <div class="mobile_nav w-[40%] h-[100vh] hidden lg:hidden fixed top-0 right-0  bg-[#393E46] border-[#DFD0B8] border-6 rounded-md shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-8 text-[#DFD0B8]">
                 <?php wp_nav_menu(array(
                     'theme_location' => 'ygouniverse_main_menu',
                     'menu_class' => 'space-y-2', // Ensure spacing
@@ -39,7 +39,7 @@
                     'items_wrap' => '<ul class="z-5 w-full pt-[100px] flex flex-col items-center text-[#DFD0B8] text-2xl font-ygo font-bold gap-8">%3$s</ul>',
                 )); ?>
             </div>
-            <div class="py-15 px-5 lg:hidden z-10 fixed top-0 right-0">
+            <div class="hamburger_container py-15 px-5 lg:hidden z-10 absolute top-0 right-0">
                 <div class="hamburger flex"><i class=" fa-solid fa-bars cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
                 <div class="cross hidden"><i class="fa-solid fa-xmark cursor-pointer text-[#DFD0B8] fa-2xl hover:text-[#948979] transition-colors"></i></div>
             </div>

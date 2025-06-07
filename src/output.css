@@ -185,6 +185,9 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .fixed {
     position: fixed;
   }
@@ -199,6 +202,12 @@
   }
   .top-\[0px\] {
     top: 0px;
+  }
+  .top-\[6\] {
+    top: 6;
+  }
+  .top-\[6px\] {
+    top: 6px;
   }
   .top-\[10\] {
     top: 10;
