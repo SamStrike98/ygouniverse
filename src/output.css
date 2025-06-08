@@ -341,6 +341,15 @@
   .max-w-min {
     max-width: min-content;
   }
+  .min-w-\[40\%\] {
+    min-width: 40%;
+  }
+  .min-w-\[200px\] {
+    min-width: 200px;
+  }
+  .min-w-\[350px\] {
+    min-width: 350px;
+  }
   .border-collapse {
     border-collapse: collapse;
   }

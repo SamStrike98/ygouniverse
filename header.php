@@ -31,7 +31,7 @@
             </div>
 
 
-            <div class="mobile_nav w-[40%] h-[100vh] hidden lg:hidden fixed top-0 right-0  bg-[#393E46] border-[#DFD0B8] border-6 rounded-md shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-8 text-[#DFD0B8]">
+            <div class="mobile_nav min-w-[350px] w-[40%] h-[100vh] hidden lg:hidden fixed top-0 right-0  bg-[#393E46] border-[#DFD0B8] border-6 rounded-md shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-8 text-[#DFD0B8]">
                 <?php wp_nav_menu(array(
                     'theme_location' => 'ygouniverse_main_menu',
                     'menu_class' => 'space-y-2', // Ensure spacing
