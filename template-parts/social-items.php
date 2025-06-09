@@ -1,4 +1,4 @@
-<div class="flex flex-row gap-8">
+<div class="flex flex-col lg:flex-row gap-4 lg:gap-8">
     <div class="h-[200px] my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col justify-between items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-8 text-[#DFD0B8]">
         <h3 class="">Newsletter:</h3>
 
