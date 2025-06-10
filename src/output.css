@@ -323,6 +323,12 @@
   .min-h-\[80vh\] {
     min-height: 80vh;
   }
+  .min-h-\[200px\] {
+    min-height: 200px;
+  }
+  .min-h-\[350px\] {
+    min-height: 350px;
+  }
   .w-\[40\%\] {
     width: 40%;
   }
