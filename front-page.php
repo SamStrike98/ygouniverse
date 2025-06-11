@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container mx-auto py-10">
     <div class="min-h-[350px] flex flex-col justify-between">
-        <div class="">
+        <div class="py-10">
             <h1 class="text-center underline decoration-[#6c7482]">Welcome to YGO Universe</h1>
             <h4 class="text-center">All Things Yu-Gi-Oh!</h4>
         </div>
@@ -19,7 +19,6 @@
 
     <?php get_template_part('template-parts/posts', 'latest'); ?>
     <?php get_template_part('template-parts/social', 'items'); ?>
-
 
 </div>
 <?php get_footer(); ?>
