@@ -11,12 +11,12 @@
 <body class="bg-[#222831]">
     <header class="bg-[#222831] h-[100px] pt-5 ">
         <nav class="h-full flex flex-row justify-between container mx-auto">
-            <div class="">
+            <div class="ml-2 sm:ml-0 min-w-[280px] my-auto">
                 <?php
                 if (has_custom_logo()) {
                     the_custom_logo();
                 } else { ?>
-                    <a href="<?php echo home_url('/'); ?>"><span class="text-[#DFD0B8] font-ygo text-6xl"><?php bloginfo('name') ?></span></a>
+                    <a href="<?php echo home_url('/'); ?>" class="w-full h-full"><span class="text-[#DFD0B8] w-full h-full font-ygo text-6xl"><?php bloginfo('name') ?></span></a>
                 <?php }
                 ?>
 
@@ -26,7 +26,7 @@
                     'theme_location' => 'ygouniverse_main_menu',
                     'menu_class' => 'space-y-2', // Ensure spacing
                     'container' => false, // Remove extra container div
-                    'items_wrap' => '<ul class="mt-3 flex flex-row text-[#DFD0B8] text-3xl font-ygo font-bold gap-8">%3$s</ul>',
+                    'items_wrap' => '<ul class="flex flex-row items-center text-[#DFD0B8] text-3xl font-ygo font-bold gap-8">%3$s</ul>',
                 )); ?>
             </div>
 
