@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-teal-700: oklch(51.1% 0.096 186.391);
@@ -269,6 +270,9 @@
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .my-auto {
+    margin-block: auto;
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -283,6 +287,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .flex {
     display: flex;
@@ -341,6 +348,9 @@
   .w-\[90\] {
     width: 90;
   }
+  .w-\[200px\] {
+    width: 200px;
+  }
   .w-\[300px\] {
     width: 300px;
   }
@@ -355,6 +365,9 @@
   }
   .min-w-\[200px\] {
     min-width: 200px;
+  }
+  .min-w-\[280px\] {
+    min-width: 280px;
   }
   .min-w-\[350px\] {
     min-width: 350px;
@@ -479,6 +492,9 @@
   .bg-teal-500 {
     background-color: var(--color-teal-500);
   }
+  .bg-yellow-300 {
+    background-color: var(--color-yellow-300);
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -509,6 +525,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
@@ -530,6 +549,9 @@
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -543,6 +565,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-6xl {
     font-size: var(--text-6xl);
@@ -628,6 +654,16 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .sm\:ml-0 {
+    @media (width >= 40rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:ml-auto {
+    @media (width >= 40rem) {
+      margin-left: auto;
     }
   }
   .sm\:flex-row {
