@@ -11,7 +11,6 @@
     <p>No Posts Found</p>
 <?php endif; ?>
 
-<?php get_template_part('template-parts/social', 'items'); ?>
 
 </div>
 <?php get_footer(); ?>
