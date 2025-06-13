@@ -18,7 +18,6 @@
     </div>
 
     <?php get_template_part('template-parts/posts', 'latest'); ?>
-    <?php get_template_part('template-parts/social', 'items'); ?>
 
 </div>
 <?php get_footer(); ?>
