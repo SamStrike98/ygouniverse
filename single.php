@@ -33,7 +33,6 @@ if (comments_open() || get_comments_number()) {
 }
 ?>
 
-<?php get_template_part('template-parts/social', 'items'); ?>
-</div>
+
 
 <?php get_footer(); ?>
