@@ -5,7 +5,7 @@
 
             <article class="">
 
-                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full h-[400px] flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"
+                <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full h-[400px] md:h-[450px] lg:h-[500px] flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"
                     style="background-image: url(<?php the_post_thumbnail_url(array(9999, 350)) ?>);">
                     <h1 class=""><?php the_title(); ?></h1>
                 </div>
