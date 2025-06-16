@@ -27,7 +27,7 @@ if (is_category() || is_tag()): ?>
         </div>
 
     <?php else: ?>
-        <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full h-[350px] md:h-[400px] lg:h-[450px] flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]">
+        <div class="my-10 bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full h-[350px] md:h-[400px] lg:h-[450px] flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8] text-center">
             <h1 class=""><?php the_title(); ?></h1>
         </div>
 
