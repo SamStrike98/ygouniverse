@@ -15,7 +15,7 @@ if (have_rows('front_page_list')):
         ?>
 
 
-            <div class="bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"><a class="w-full h-full flex justify-center items-center" href="<?php echo esc_attr(get_sub_field('link')); ?>"><?php echo acf_esc_html(get_sub_field('name')); ?></a></div>
+            <div class="bg-[#393E46] border-[#DFD0B8] border-6 rounded-md w-full flex flex-col justify-center items-center shadow-[inset_0px_0px_15px_6px_rgba(0,_0,_0,_0.8)] p-3 text-[#DFD0B8]"><a class="w-full h-full flex justify-center items-center text-center font-bold text-lg" href="<?php echo esc_attr(get_sub_field('link')); ?>"><?php echo acf_esc_html(get_sub_field('name')); ?></a></div>
 
 
         <?php
