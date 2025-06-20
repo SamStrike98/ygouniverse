@@ -323,6 +323,9 @@
   .h-\[200px\] {
     height: 200px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-\[300px\] {
     height: 300px;
   }
@@ -358,6 +361,9 @@
   }
   .min-h-\[350px\] {
     min-height: 350px;
+  }
+  .min-h-\[1000px\] {
+    min-height: 1000px;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -448,6 +454,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
