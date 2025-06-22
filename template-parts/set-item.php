@@ -24,10 +24,10 @@
 
 
             <div>
-                <p><?php echo esc_html($code); ?></p>
+                <p>Code: <span class="font-bold"><?php echo esc_html($code); ?></span></p>
             </div>
             <div>
-                <p>Release Date: <?php echo esc_html($release_date); ?></p>
+                <p>Release Date: <span class="font-bold"><?php echo esc_html($release_date); ?></span></p>
             </div>
 
             <div>
