@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,8 @@
     <title><?php bloginfo('name'); ?></title>
 </head>
 
-<body class="bg-[#222831]">
-    <header class="bg-[#222831] h-[100px] pt-5 ">
+<body class="bg-[#222831] ">
+    <header class="bg-[#222831] h-[100px] pt-5" id="header">
         <nav class="h-full flex flex-row justify-between container mx-auto">
             <div class="ml-2 sm:ml-0 min-w-[280px] my-auto">
                 <?php
