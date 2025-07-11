@@ -25,8 +25,6 @@
         </div>
     <?php endif; ?>
 
-    <pre><?php print_r($cards); ?></pre>
-
 </div>
 
 
