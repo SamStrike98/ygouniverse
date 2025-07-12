@@ -29,13 +29,6 @@
 
 
 
-
-
-
-
-
-
-
 <div class="flex flex-col gap-15">
     <?php
     if (have_rows('year_list')):
