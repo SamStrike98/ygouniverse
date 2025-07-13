@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 <div class="container mx-auto py-10">
 
-
-
-
     <?php get_template_part('template-parts/page', 'banner'); ?>
 
     <?php get_template_part('template-parts/format', 'list'); ?>
