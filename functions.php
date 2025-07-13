@@ -29,3 +29,17 @@ function custom_excerpt_length($length)
     return 15; // Change this number to your desired word count
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+
+
+
+// Only show the parent formats
+function show_only_parent_formats($query)
+{
+    if (! is_admin() && $query->is_main_query() && is_post_type_archive('format')) {
+        $query->set('post_parent', 0);
+        $query->set('order', 'ASC');
+        $query->set('orderby', 'date');
+    }
+}
+add_action('pre_get_posts', 'show_only_parent_formats');
