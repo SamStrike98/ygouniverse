@@ -4,7 +4,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-4">
         <?php if (have_posts()): ?>
             <?php while (have_posts()): the_post(); ?>
-                <?php get_template_part('template-parts/post', 'item'); ?>
+                <?php get_template_part('template-parts/format', 'item'); ?>
             <?php endwhile; ?>
     </div>
 
