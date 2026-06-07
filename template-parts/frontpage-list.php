@@ -11,7 +11,6 @@ if (have_rows('front_page_list')):
             // Load sub field value.
             $name = get_sub_field('name');
             $link = get_sub_field('link');
-            // Do something, but make sure you escape the value if outputting directly...
         ?>
 
 
